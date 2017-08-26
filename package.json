@@ -1,0 +1,40 @@
+{
+  "name": "adote_um_pet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/bin/index",
+    "dev": "nodemon server/bin/index",
+    "test": "mocha --opts server/test/integration/mocha.opts server/test/integration/*/*.js",
+    "coverage": "instanbul cover _mocha -- -R spec server/test/integration/*/*js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleyamaral/adote_um_pet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesleyamaral/adote_um_pet/issues"
+  },
+  "homepage": "https://github.com/wesleyamaral/adote_um_pet#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  }
+}
