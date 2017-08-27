@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node server/bin/index",
     "dev": "nodemon server/bin/index",
-    "test": "mocha --opts server/test/integration/mocha.opts server/test/integration/*/*.js",
-    "coverage": "instanbul cover _mocha -- -R spec server/test/integration/*/*js"
+    "test": "mocha --opts server/test/integration/mocha.opts server/test/integration/*.js",
+    "coverage": "istanbul cover _mocha -- -R spec server/test/integration/*js",
+    "showCoverage": "google-chrome coverage/lcov-report/index.html"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "mongoose": "^4.11.8",
     "morgan": "^1.8.2"
   },
   "devDependencies": {
